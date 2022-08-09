@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		@font-face {
+		    font-family: 'tt';
+		    src: url('./teletext.ttf');
+		}
+
+		* {
+			background: black;
+			font-family: tt;
+			color:  #4ed2fd;
+		}
+
+		#header {
+			background: blue;
+			color: yellow;
+			font-weight: bold;
+			padding: 10px;
+			font-size:  20px;
+		}
+
+		#header > div {
+			background:  blue;
+			color:  yellow;
+		}
+
+		.header-bar {
+			background:  yellow;
+			display: block;
+			width:  100%;
+			height: 10px;
+			margin: 5px 0;
+		}
+
+		#yellow-block {
+			color:  yellow;
+		}
+	</style>
+</head>
+<body spellcheck="false">
+	<div class="header-bar"></div>
+	<div id="header" contenteditable>
+		Text title
+	</div>
+	<div class="header-bar"></div>
+	<br />
+	<span id="yellow-block">█ </span>
+		<span contenteditable>
+		Text body
+		</span>
+	<br /><br /><div class="header-bar"></div>
+</body>
+</html>
